@@ -1,0 +1,145 @@
+*{
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    background: #FB4250;
+}
+.container{
+    width: 70%;
+    background-color: #fff;
+    height: 85%;
+    margin: 5%  auto;
+    border-radius: 10px;
+
+}
+.row::after{
+    content: ".";
+    clear: both;
+    visibility: hidden;
+    display: block;
+    line-height: 0;
+    height: 0;
+}
+.col-3{
+    width: 25%;
+
+}
+[class*='col-']{
+    float: left;
+}
+.col-9 {
+    width: 75%;
+    margin: auto ;
+    padding-top: 25px ;
+}
+.form-header{
+    
+
+}
+.img{
+    min-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-size: cover;
+    background-image: url('./images/318045.jpg');
+    border-radius: 10px;
+    border-top-right-radius: 0 ;
+    border-bottom-right-radius: 0 ;
+    
+}
+.contect-form-div{
+    width: 60%;
+    margin: 0 auto;
+
+}
+form {
+    margin-top: 20px ;
+}
+input  , textarea{
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ccc;
+    padding: 8px 16px ;
+    margin: 5px auto;
+    outline: none !important;
+    
+
+}
+input :placeholder , textarea:placeholder{
+    color: #ccc;
+
+}
+input.valid , textarea.valid{
+    border-color: #36cc36;
+    
+}
+input.invalid , textarea.invalid{
+    border-color: #FB4250;
+} 
+input + span , textarea + span{
+    display: none;
+    font-size: .8em;
+    text-align: center;
+    margin-bottom:8px ;
+    color: #FB4250;
+    
+}
+#send{
+    display: none;
+    font-size: .8em;
+    text-align: center;
+    margin-bottom:15px ;
+    color: #36cc36;
+}
+input.invalid + span , textarea.invalid + span{ 
+    display: block;
+}
+.btn-div{
+    margin-top: 5px ;
+}
+.btn{
+    background: #36cc36;
+    text-decoration: none;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+}
+.btn:hover{
+    background: #555;
+    transition: all .4s ease-in-out ;
+    padding: 10px 15px;
+}
+
+@media only screen and (max-width:768px){
+.col-m-12{
+    width: 100%;
+    float: none;
+}
+.container{
+    width: 90%;
+    background-color: #fff;
+  
+}
+.col-9 {
+    width: 100%;
+    margin: auto ;
+    
+}
+.img{
+    height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    background-size: cover;
+    
+}
+.contect-form-div{
+    width: 90%;
+    padding: 10px;
+    margin: 0 auto;
+    background: #fff;
+}
+
+}
